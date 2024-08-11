@@ -64,15 +64,15 @@ function create(){
     .setGravityY(300)//gravedad del personaje
 
     this.physics.world.setBounds(0, 0, 2000, config.height)
-  this.physics.add.collider(this.mario, this.floor)
+    this.physics.add.collider(this.mario, this.floor)
 
-  this.cameras.main.setBounds(0, 0, 2000, config.height)
-  this.cameras.main.startFollow(this.mario)
+    this.cameras.main.setBounds(0, 0, 2000, config.height)//limites de la camara
+    this.cameras.main.startFollow(this.mario)//sigue al personaje
 
     createAnimations(this)
 
     this.keys = this.input.keyboard.createCursorKeys()
-}
+   }
 
 function update(){
 if(this.mario.isDead) return
@@ -96,16 +96,16 @@ if(this.mario.isDead) return
 
 if (this.mario.y >= config.height){
    this.mario.anims.play('mario-die')
-   this.mario.setCollideWorldBounds(false)
-   this.sound.play('gameover')
+   this.mario.setCollideWorldBounds(false)//desactiva la colision con los limites del mundo
+   this.sound.play('gameover')//reproduce el sonido
 
 
    setTimeout(() => {
       this.mario.setVelocityY(-350)
-   }, 100)
+   }, 100)//salto del personaje
 
    setTimeout(() => {
       this.scene.restart()
-   }, 2000)
+   }, 2000)//reinicia el juego
 }
 }
