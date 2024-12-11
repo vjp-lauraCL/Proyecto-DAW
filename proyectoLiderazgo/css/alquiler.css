@@ -1,0 +1,38 @@
+.app-demo {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.app-demo h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1abc9c;
+}
+
+#map {
+    margin: 20px auto;
+}
+
+.details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#patinetes-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#patinetes-table th, #patinetes-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#patinetes-table th {
+    background-color: #1abc9c;
+    color: white;
+}

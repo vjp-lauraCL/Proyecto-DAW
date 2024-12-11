@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alquiler.css">
+    <script src="https://kit.fontawesome.com/fd7ff30691.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Alquiler de Patinetes</title>
+</head>
+<body>
+    <header class="header">
+        <div class="child-header">
+          <div class="box-logo">
+            <h1>Frenazzo <img src="img/scooter-electrico.png" alt="scooter" style="height: 40px; width: 40px;"></h1>
+          </div>
+          
+          <nav class="box-menu-navegacion" id="menu-navegacion">
+            <ul class="menu-navegacion">
+              <li class="item-menu">
+                <a href="#" class="item-menu-link">Inicio</a>
+              </li>
+              <li class="item-menu">
+                <a href="sobreNosotros.html" class="item-menu-link">Sobre Nosotros</a>
+              </li>
+              
+              <li class="item-menu item-menu-sub-menu">
+                <a href="alquilerPatinete.html" class="item-menu-link">Alquilar patinete</a>                
+              
+              <li class="item-menu item-menu-sub-menu">
+                <a href="#" class="item-menu-link">Tarifas</a>
+                <i class="fas fa-angle-down angle-view-sub-menu"></i>
+                
+                <ul class="sub-menu" id="sub-menu">
+                  <li class="item-menu">
+                    <a href="#" class="item-menu-link">Estudiantes</a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="item-menu-link">Familias monoparentales</a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="item-menu-link">Trabajadores</a>
+                </li>
+            </ul>
+          </li>
+              
+              <li class="item-menu">
+                <a href="#" class="item-menu-link">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        
+          <button class="btn-hamburguesa" id="btn-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        
+        </div>
+      </header>
+
+    <div class="app-demo">
+        <h2>Encuentra tu patinete cercano en Cáceres</h2>
+        <div id="map" style="width: 80%; height: 400px; margin: 0 auto;"></div>
+
+        <div class="details" id="details" style="display: none;">
+            <p id="details-text">Patinete disponible.</p>
+            <table id="patinetes-table">
+                <thead>
+                    <tr>
+                        <th>ID Patinete</th>
+                        <th>Nivel de batería</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://skyblue.com" target="_blank" aria-label="SkyBlue">
+                <i class="fab fa-skyblue"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Frenzado. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/alquiler.js"></script>
+</body>
+</html>
