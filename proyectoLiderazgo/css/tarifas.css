@@ -1,0 +1,110 @@
+
+/* Secciones de tarifas */
+.tarifa {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tarifa h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #4caf50;
+}
+
+.tarifa-detalles {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.tarifa-detalles li {
+    margin-bottom: 0.5rem;
+}
+
+.beneficios, .historias, .empresa {
+    margin-top: 2rem;
+}
+
+button.btn-solicitar-destacado {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button.btn-solicitar-destacado:hover {
+    background-color: #45a049;
+}
+
+/* Estilos dinámicos para los comentarios */
+blockquote {
+    background-color: #f0f0f0;
+    border-left: 4px solid #4caf50;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-style: italic;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Foto de usuario en círculo */
+.foto-usuario {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Cambios automáticos de estilo según clase */
+blockquote.highlight {
+    background-color: #e8f5e9;
+    border-left-color: #66bb6a;
+}
+
+blockquote.error {
+    background-color: #ffebee;
+    border-left-color: #e57373;
+}
+
+blockquote.info {
+    background-color: #e3f2fd;
+    border-left-color: #64b5f6;
+}
+.empresas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Estilo de los logos de las empresas */
+.logo-empresa {
+    width: 100px; /* Tamaño máximo deseado */
+    height: 100px; /* Mantiene una forma cuadrada */
+    object-fit: contain; /* Asegura que el logo se vea completo sin ser recortado */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega una animación de transición */
+}
+
+/* Efecto hover para los logos */
+.logo-empresa:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el ratón */
+}
